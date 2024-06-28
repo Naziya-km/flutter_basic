@@ -59,7 +59,11 @@ class _LoginState extends State<Login> {
                   TextButton(
                       onPressed: () {},
                       child: Text("signup/create an account")),
-                  ElevatedButton(onPressed: () {}, child: Text("login"))
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child: Text("login"))
                 ],
               ),
               SizedBox(

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class Secondpage extends StatelessWidget {
   const Secondpage({super.key});
 
@@ -26,7 +28,16 @@ class Secondpage extends StatelessWidget {
             Text(
               "Naziya",
               style: TextStyle(fontSize: 45),
-            )
+            ),
+            Center(
+                child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return Login();
+                      }));
+                    },
+                    child: Text("login")))
           ],
         ),
       ),
