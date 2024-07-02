@@ -20,10 +20,10 @@ class _LoginState extends State<Login> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.asset(
-                "assets/images/image.jpg",
-                height: 100,
-              ),
+              // Image.asset(
+              //   "assets/images/image.jpg",
+              //   height: 100,
+              // ),
               Lottie.network(
                   "https://lottie.host/37575ae2-affc-4e11-a9a1-7ac0a062b434/sDgAAuSeFD.json",
                   height: 100),
