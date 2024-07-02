@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -9,7 +10,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  var colors = Colors.pink;
+  var colors = Colors.white;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,16 +20,16 @@ class _LoginState extends State<Login> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Image.network(
-                  height: 100,
-                  "https://cdn-icons-png.flaticon.com/512/87/87390.png"),
+              Lottie.network(
+                  "https://lottie.host/37575ae2-affc-4e11-a9a1-7ac0a062b434/sDgAAuSeFD.json",
+                  height: 100),
               IconButton(
                   onPressed: () {
                     setState(() {
-                      if (colors == Colors.pink) {
+                      if (colors == Colors.white) {
                         colors = Colors.green;
                       } else {
-                        colors = Colors.pink;
+                        colors = Colors.white;
                       }
                     });
                   },
