@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -58,7 +59,10 @@ class _LoginState extends State<Login> {
                 children: [
                   TextButton(
                       onPressed: () {},
-                      child: Text("signup/create an account")),
+                      child: Text(
+                        "signup/create an account",
+                        style: GoogleFonts.abel(),
+                      )),
                   ElevatedButton(
                       onPressed: () {
                         Navigator.pop(context);
